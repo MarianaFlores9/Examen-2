@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFIL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-encabezado">
+            <a href="https://www.cecyt9.ipn.mx/" class="logo"><img id="mi-id" src="escudoCECyT9R.png" alt=""></a>
+            <a href="index.html"><img id="dot" src="examen_logo.png" alt=""></a>
+
+        <nav class="navegation"> 
+            <ul>
+                <li><a href="LSD.html">LSD</a></li>
+                <li><a href="LBD.html">LBD</a></li>
+                <li><a href="LVT.html">LVT</a></li>
+                <li><a href="40.html">4.0</a></li>
+            </ul>
+        </nav>
+              
+        </div>
+        
+    </header>
+  
+    
+    <main>
+        <br>
+        <div class="in-registro">
+            
+            <h2 id="titulo-in">PERFIL</h2>
+            <form action="post" id="reg-sesion" >
+                <p>Nombre</p>
+                <input type="text" class="" id="input-nombre">
+                <p>Apellido Paterno</p>
+                <input type="text" id="input-aPaterno">
+                <p>Apellido Materno</p>
+                <input type="text" id="input-aMaterno">
+                <p>Foto</p>
+                <input type="file" id="input-foto">
+                <p>No. Empleado</p>
+                <input type="text" id="input-nEmpleado">
+                <p>Sexo</p>
+                <select id="input-sexo">
+                    <option value="H">Hombre</option>
+                    <option value="M">Mujer</option>
+                    <option value="N">No especificar</option>
+                </select>
+                <p>Fecha de nacimiento</p>
+                <input type="date" id="input-fechaNacimiento">
+                <p>Usuario</p>
+                <input type="text" id="input-usuario">
+                <p>Contraseña</p>
+                <input type="password" id="input-contrasegna">
+                <p>Confirmar contrase&ntilde;a</p>
+                <input type="password" id="input-confirmar">
+                <br>
+                <div class="botones-reg">
+                    <button id="iniciar"><a href="index.html">GUARDAR CAMBIOS</a></button>
+                </div>
+                
+            </form>
+    
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

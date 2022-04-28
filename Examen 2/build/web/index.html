@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro de Problema Tecnico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+       <header class="header">
+        <div class="logo-encabezado">
+            <a href="https://www.cecyt9.ipn.mx/" class="logo"><img id="mi-id" src="img/escudoCECyT9R.png" alt=""></a>
+            <a href="Consultarreporte.jsp"><img id="dot" src="img/examen_logo.png" alt=""></a>
+
+        <nav class="navegation"> 
+            <ul>
+                <li><a href="ConsultarLDS.jsp">LDS</a></li>
+                <li><a href="ConsultarLBD.jsp">LBD</a></li>
+                <li><a href="ConsultarLNT.jsp">LNT</a></li>
+                <li><a href="Consultar40.jsp">4.0</a></li>
+            </ul>
+        </nav>
+              
+        </div>
+        
+    </header>
+  
+    
+    <main>
+        <br>
+        <div class="reg-problema">
+            <h2 id="titulo-regproblema">Reportar Problema Técnico</h2>
+             <form method="post" action="RegistrarRep.jsp" name="formulario1" id="reg_problema" onsubmit="return validarProblema()" >
+                
+                <p class="label-regproblema">Laboratorio</p>
+               <input type="text" name="lab" id="input_id_lab">
+               
+                <p class="label-regproblema">ID Reporte</p>
+               <input type="text" name="idreporte" id="input_id_reporte">
+               
+               <p class="label-regproblema">Fecha</p>
+               <input type="date" name="fecha" id="input_fecha">
+               
+               <p class="label-regproblema">Hora</p>
+               <input type="time" name="hora" id="input_hora">
+               
+                <p class="label-regproblema">ID Máquina</p>
+               <input type="text" name="idmaquina" id="input_id_maquina">
+               
+               <p class="label-regproblema">ID Equipo</p>
+               <input type="text" name="idequipo" id="input_id_equipo">
+               
+                <p class="label-regproblema" maxlength="5" >Descripción del Problema</p>
+               <textarea name="" id="" cols="40" rows="10" name="problema" class="texto_regproblema"></textarea>
+               
+               <p class="label-regproblema">ID Persona</p>
+               <input type="text" name="idpersona" id="input_id_persona">
+               
+               <p class="label-regproblema">Rol</p>
+               <select id="input_rol">
+                   <option name="rol" value="Alumno">Alumno</option>
+                   <option name="rol" value="Docente">Docente</option>
+               </select>
+               
+               <p class="label-regproblema">Nombre</p>
+               <input type="text" name="nombre" id="input_nombre">
+               
+               <p class="label-regproblema">Apellido Paterno</p>
+               <input type="text" name="appat" id="input_appat">
+               
+               <p class="label-regproblema">Apellido Materno</p>
+               <input type="text" name="apmat" id="input_apmat">
+               
+               <p class="label-regproblema">Grupo</p>
+               <input type="text" name="grupo" id="input_grupo">
+              
+               <p class="label-regproblema">Asignatura</p>
+               <input type="text" name="asig" id="input_asignatura">
+               
+               <p class="label-regproblema">Estado del Reporte:</p>
+               <select id="input_estado">
+                   <option name="estado" value="pendiente">Pendiente</option>
+                   <option name="estado" value="resuelto">Resuelto</option>
+               </select>
+
+               <p class="label-regproblema">Prioridad del Reporte:</p>
+               <select id="input_prioridad">
+                   <option name="prioridad" value="high">Alta</option>
+                   <option name="prioridad" value="medium">Media</option>
+                   <option name="prioridad" value="low">Baja</option>
+               </select>
+
+               <br>
+               <br>
+               
+               <div class="botones-regproblema">
+                <input id="registrar" type="submit" value="Registrar">
+               </div>
+
+           </form>
+    
+        </div>    
+    </main>
+
+    <script src="scripts.js"></script>
+         
+    </body>
+</html>

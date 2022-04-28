@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="in_registro">
+       
+        <h2 id="titulo-in">Registro</h2>
+        <form action="post" name="reg_sesion" id="reg_sesion" >
+            <p>Nombre</p>
+            <input type="text" maxlength="50" id="input_nombre" required>
+            <p>Apellido Paterno</p>
+            <input type="text" maxlength="50" id="input_appat" required>
+            <p>Apellido Materno</p>
+            <input type="text" maxlength="50" id="input_apmat" required>
+            <p>Foto</p>
+            <input type="file" onchange="validarRegistro()" id="input_foto" required>
+            <p>No. Empleado</p>
+            <input type="number" maxlength="10" id="input_nEmpleado" required>
+            <p>Sexo</p>
+            <select id="input_sexo"  required>
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+                <option value="N">No especificar</option>
+            </select>
+            <p>Fecha de nacimiento</p>
+            <input type="date" id="input_fechaNacimiento" required>
+            <p>Usuario (digite 10 numeros)</p>
+            <input type="text" id="input_usuario" maxlength="10">
+            <p>Contraseña</p>
+            <input type="password" id="input_contrasena" maxlength="20" minlength="7">
+            <p>Confirmar contrase&ntilde;a</p>
+            <input type="password" id="input_confirmar" maxlength="20" minlength="7">
+            <br>
+            <div class="botones-reg">
+                <button id="iniciar" onclick="validarRegistro()"><a href="#">Registrarse</a></button>
+            </div>
+            
+        </form>
+
+    </div>
+    <script src="validacionReg.js"></script>
+</body>
+</html>

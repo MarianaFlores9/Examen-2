@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    background-color: #6c1d45;
+    color: black; 
+    font-size: 1rem;
+    font-family: 'Arial';
+    
+}
+.header{
+    background-color: #b0afaf;
+    height: 5rem;
+    color: black;
+    padding: 1rem 1rem;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+.header a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.875rem;
+}
+
+.navegation ul{
+    margin: 0;
+    padding-top: 2.5rem;
+    list-style: none;
+    /* margin-right: 16.2rem; */
+}
+    .navegation ul li{
+        display: inline-block;
+    }
+        .navegation ul li a{
+            display: block;
+            padding: 0.4rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 0313rem;
+            font-size: 1.125rem;
+            margin-right: 4rem;
+        }
+            .navegation ul li a:hover{
+                background-color: #ffffff;
+            }
+
+
+
+h1{
+    text-align: center;
+    padding-top: -3rem;
+    margin-top: -3rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+    font-size: 30px;
+    font-weight:500;
+}
+
+#mi-id{
+    width: 5.4rem;
+    height: 5.4rem;
+    margin-left: 2.5rem;
+    margin-top: 0;
+    display:inline-block;
+}
+
+
+
+#dot{
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-right: 2rem;
+    margin-top: -1rem;
+
+    float: right;
+    
+    position: relative;
+}
+
+#perfil{
+    width: 5rem;
+    height: 5rem;
+    margin-left: -5rem;
+    margin-top: -1rem;
+    float: right;
+}
+
+.container{
+    padding-top: 12rem;
+    margin: 0 auto ;
+    text-align: justify;
+    padding-left: 12rem;
+    padding-right: 1rem; 
+
+}
+
+.container-regproblema{
+    padding-top: 16rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: white; 
+
+}
+/* 
+.text{
+    width: 45.75rem;
+    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+} */
+/* Estilos de menu superior */
+.logo-encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.opcion ul{
+    margin: 0;
+    padding-top: 1rem;
+    list-style: none;
+    margin-left: 29.5rem;
+    margin-bottom: 5rem;
+}
+    .opcion ul li{
+        display:inline-block;
+        padding-right: 3rem;
+    }
+        .opcion ul li a{    
+            display: block;
+            padding: 0.5rem .5rem;
+            transition: all 0.4s linear;
+            border-radius: 100%;
+            height: 1rem;
+            width: 1rem;
+            font-size: 1.125rem;
+            text-decoration: none;
+            color: white;
+            position: sticky;
+            text-align: center;
+        }
+            .opcion ul li a:hover{
+                background-color: #b16088;
+            }
+/* Fin Estilos Menu superior */
+
+/* Inicio Estilos para Iniciar Sesion */
+.in-datos {
+    background-color: white;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 2rem;
+    margin-top: 6rem;
+    margin-left: 35%;
+}
+
+#titulo-in{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+
+.label-iniciar{
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    font-size: 1.35rem;
+}
+
+#input-usu{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+
+#input-contra{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+
+#input-fecha{
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    width: 80%;
+}
+
+
+
+#in-sesion{
+    margin-top: 2.5rem;
+}
+
+#registrarse{
+    margin-left: 1.9rem;
+    margin-top: 1rem;
+}
+
+#registrarse a{
+    text-decoration: none;
+    color: black;
+}
+
+#iniciar{
+    margin-left: 1.9rem;
+    margin-top: 1rem;
+}
+
+#iniciar a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Fin estilo para iniciar sesion */
+
+/* Estilos para registrar problema */
+#titulo-regproblema{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.label-regproblema{
+    font-size: 1.35rem;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    font-size: 1.35rem;
+    
+}
+
+#input-fecha_hora{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input-estado{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input-prioridad{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input-asignatura{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input-grupo{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input-no_empleado{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input-id_equipo{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input-desproblema{
+    margin-left: 2rem;
+    width: 40%;
+    height: 40%;
+}
+
+.texto-regproblema{
+    resize: none;
+    margin-left: 4.9rem;
+    margin-top: 1rem;
+    
+}
+
+#reportar-problema{
+    margin-bottom: 1rem;
+    margin-left: 41%;
+}
+
+#reportar-problema a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.reg-problema {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    border-radius: 2rem;
+    margin-top: 8rem;
+    margin-left: 23rem;
+}
+
+.botones-regproblema{
+    margin-bottom: 2rem;
+    margin-right: -1rem;
+    position: relative;
+}
+
+/* Fin estilos para registrar problema */
+
+
+/* Estilos para editar registros de problemas */
+
+#titulo-editproblema{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.label-editproblema{
+    font-size: 1.35rem;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    font-size: 1.35rem;
+    
+}
+
+#edit-fecha_hora{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#edit-estado{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#edit-prioridad{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#edit-asignatura{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#edit-grupo{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#edit-no_empleado{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#edit-id_equipo{
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#edit-desproblema{
+    margin-left: 2rem;
+    width: 40%;
+    height: 40%;
+}
+
+.texto-editproblema{
+    resize: none;
+    margin-left: 4.9rem;
+    margin-top: 1rem;
+    
+}
+
+#editar-problema{
+    margin-bottom: 1rem;
+    margin-left: 41%;
+}
+
+#editar-problema a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.edit-problema {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    border-radius: 2rem;
+    margin-top: 8rem;
+    margin-left: 23rem;
+}
+
+.botones-editproblema{
+    margin-bottom: 2rem;
+    margin-right: -1rem;
+    position: relative;
+}
+/* Fin estilos de editar registros de problemas */
+
+
+/* Estilos para registro de persona */
+.in_registro {
+    background-color: white;
+    width: 22rem;
+    height: 90%;
+    border-radius: 2rem;
+    margin-top: 7rem;
+    margin-left: 35%;
+}
+
+#input_nombre{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_foto{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_appat{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_apmat{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_nEmpleado{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_sexo{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_fechaNacimiento{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_usuario{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_contrasegna{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#input_confirmar{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;  
+}
+
+#reg_sesion{
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+
+.botones_reg button{
+    margin-bottom: 2rem;
+    margin-right: -1rem;
+    
+}
+
+/*Fin estilos para registro*/
+
+/* Estilos de Perfil */
+
+
+
+
+
+
+/* Fin de estilos perfil */
+
+           

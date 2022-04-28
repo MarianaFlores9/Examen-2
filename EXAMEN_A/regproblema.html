@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Problema Tecnico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-encabezado">
+            <a href="https://www.cecyt9.ipn.mx/" class="logo"><img id="mi-id" src="escudoCECyT9R.png" alt=""></a>
+            <a href="index.html"><img id="dot" src="examen_logo.png" alt=""></a>
+
+        <nav class="navegation"> 
+            <ul>
+                <li><a href="LSD.html">LSD</a></li>
+                <li><a href="LBD.html">LBD</a></li>
+                <li><a href="LVT.html">LVT</a></li>
+                <li><a href="40.html">4.0</a></li>
+            </ul>
+        </nav>
+              
+        </div>
+        
+    </header>
+  
+    
+    <main>
+        <br>
+        <div class="reg-problema">
+            <h2 id="titulo-regproblema">Reportar Problema Técnico</h2>
+            <form action="post" id="reg-problema" >
+
+                <p class="label-regproblema">Fecha y Hora</p>
+                <input type="datetime-local" id="input-fecha_hora">
+
+                <p class="label-regproblema">Estado del Reporte:</p>
+                <select id="input-estado">
+                    <option value="pendiente">Pendiente</option>
+                    <option value="resuelto">Resuelto</option>
+                </select>
+
+                <p class="label-regproblema">Prioridad del Reporte:</p>
+                <select id="input-prioridad">
+                    <option value="high">Alta</option>
+                    <option value="medium">Media</option>
+                    <option value="low">Baja</option>
+                </select>
+
+                <p class="label-regproblema">Asignatura</p>
+                <input type="text" id="input-asignatura">
+
+                <p class="label-regproblema">Grupo</p>
+                <input type="text" id="input-grupo">
+
+                <p class="label-regproblema">No. Empleado</p>
+                <input type="text" id="input-no_empleado">
+
+                <p class="label-regproblema">ID Equipo</p>
+                <input type="text" id="input-id_equipo">
+
+                <p class="label-regproblema" maxlength="5" >Descripción del Problema</p>
+                <textarea name="" id="" cols="40" rows="10" class="texto-regproblema"></textarea>
+
+                <br>
+                <br>
+                
+                <div class="botones-regproblema">
+                    <button id="reportar-problema"><a href="insesion.html">REPORTAR</a></button>
+                </div>
+
+            </form>
+    
+        </div>   
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

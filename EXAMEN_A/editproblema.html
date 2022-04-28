@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Problema Tecnico</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-encabezado">
+            <a href="https://www.cecyt9.ipn.mx/" class="logo"><img id="mi-id" src="escudoCECyT9R.png" alt=""></a>
+            <a href="index.html"><img id="dot" src="examen_logo.png" alt=""></a>
+            <link rel="stylesheet" href="style.css">
+        <nav class="navegation"> 
+            <ul>
+                <li><a href="LSD.html">LSD</a></li>
+                <li><a href="LBD.html">LBD</a></li>
+                <li><a href="LVT.html">LVT</a></li>
+                <li><a href="40.html">4.0</a></li>
+            </ul>
+        </nav>
+              
+        </div>
+        
+    </header>
+  
+    
+    <main>
+        <br>
+        <div class="edit-problema">
+            <h2 id="titulo-editproblema">Editar Problema Técnico</h2>
+            <form action="post" id="reg-problema" >
+
+                <p class="label-editproblema">Fecha y Hora</p>
+                <input type="datetime-local" id="edit-fecha_hora">
+
+                <p class="label-editproblema">Estado del Reporte:</p>
+                <select id="edit-estado">
+                    <option value="pendiente">Pendiente</option>
+                    <option value="resuelto">Resuelto</option>
+                </select>
+
+                <p class="label-editproblema">Prioridad del Reporte:</p>
+                <select id="edit-prioridad">
+                    <option value="high">Alta</option>
+                    <option value="medium">Media</option>
+                    <option value="low">Baja</option>
+                </select>
+
+                <p class="label-editproblema">Asignatura</p>
+                <input type="text" id="edit-asignatura">
+
+                <p class="label-editproblema">Grupo</p>
+                <input type="text" id="edit-grupo">
+
+                <p class="label-editproblema">No. Empleado</p>
+                <input type="text" id="edit-no_empleado">
+
+                <p class="label-editproblema">ID Equipo</p>
+                <input type="text" id="edit-id_equipo">
+
+                <p class="label-editproblema" maxlength="5" >Descripción del Problema</p>
+                <textarea name="" id="" cols="40" rows="10" class="texto-editproblema"></textarea>
+
+                <br>
+                <br>
+                
+                <div class="botones-editproblema">
+                    <button id="editar-problema"><a href="index.html">EDITAR</a></button>
+                </div>
+
+            </form>
+    
+        </div>   
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
